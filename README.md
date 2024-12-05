@@ -75,9 +75,9 @@ combos = analyzer.combo_count()
 permutations = analyzer.permutation_count()
 ```
 
-#API
+# API
 
-##Die Class
+## Die Class
 
 __init__(self, faces): Initialize the die with faces and default weights.
 
