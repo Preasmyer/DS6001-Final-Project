@@ -50,6 +50,8 @@ die1 = Die(np.array([1, 2, 3, 4, 5, 6]))
 die2 = Die(np.array)[1, 2, 3, 4, 5, 6]))
 game = Game([die1, die2])
 ```
+### Analyzer Class
+
 The 'Analyzer' class takes the results of a game and computes various descriptive statistical properties.
 
 Below are some examples of how to use this class.
