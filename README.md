@@ -8,7 +8,7 @@ The Final Project for DS 6001 - Programming for Data Science
 - **Name:** MonteCarloSimulator
 - **Version:** 1.0.0
 - **Author:** Cameron Preasmyer
-- **Email:**spc6uz@virginia.edu
+- **Email:** spc6uz@virginia.edu
 - **Description:** A Monte Carlo simulator with Die, Game, and Analyzer classes.
 - **License:** MIT License
 - **Repository URL:** [https://github.com/Preasmyer/DS6001-Final-Project](https://github.com/Preasmyer/DS6001-Final-Project)
@@ -19,51 +19,59 @@ The Final Project for DS 6001 - Programming for Data Science
 
 The `Die` class represents a die with a specified number of faces and weights. It allows you to roll the die and change the weight of specific faces.
 
+Below are some examples of how to use the Die class
+
 ```python
 from MonteCarlo import Die
 import numpy as np
 
-# EXAMPLE: Create a die with faces 1 through 6
+# Example of how to create a die with faces 1 through 6
 die = Die(np.array([1, 2, 3, 4, 5, 6]))
 
-# Change the weight of face 1 to 2.0
+# Example on how to change the weight of face 1 to 2.0
 die.change_weight(1, 2.0)
 
-# Roll the die 10 times
+# Example of how to roll the die 10 times (replace 10 with any number for n rolls)
 results = die.roll(10)
 
-# Show the current state of the die
+# Example of how to show the current state of the die created
 die.show()
+```
 
-### Game Class The `Game` class consists of rolling one or more dice multiple times and stores the results. 
+### Game Class 
 
-```python 
+The `Game` class consists of rolling one or more dice multiple times and stores the results. 
+Below are some example of how the 'Game' class works and how to use it.
+```python
+
 from MonteCarlo import Game 
-# EXAMPLE: Create a game with two dice 
+# Example of creating a game with two dice 
 die1 = Die(np.array([1, 2, 3, 4, 5, 6]))
 die2 = Die(np.array)[1, 2, 3, 4, 5, 6]))
 game = Game([die1, die2])
-
+```
 The 'Analyzer' class takes the results of a game and computes various descriptive statistical properties.
+
+Below are some examples of how to use this class.
+
 ```python
 from MonteCarlo import Analyzer
 
-EXAMPLE:
-
-# Create an analyzer for the game
+# How to create an Analyzer. The Analyzer takes the game object as an input.
 analyzer = Analyzer(game)
 
-# Compute the number of jackpots
+# Example of how to compute the number of jackpots in your rolls
 jackpots = analyzer.jackpot()
 
-# Compute the face counts per roll
+# Example of how to compute the face counts per roll
 face_counts = analyzer.face_counts_per_roll()
 
-# Compute the distinct combinations of faces rolled
+# Example of how to compute the distinct combinations of faces rolled
 combos = analyzer.combo_count()
 
-# Compute the distinct permutations of faces rolled
+# Example of how to compute the distinct permutations of faces rolled
 permutations = analyzer.permutation_count()
+```
 
 #API
 
