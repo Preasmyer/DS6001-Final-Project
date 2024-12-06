@@ -1,0 +1,12 @@
+README.md
+setup.py
+MonteCarlo/Analyzer.py
+MonteCarlo/Die.py
+MonteCarlo/Game.py
+MonteCarlo/__init__.py
+Project_Package.egg-info/PKG-INFO
+Project_Package.egg-info/SOURCES.txt
+Project_Package.egg-info/dependency_links.txt
+Project_Package.egg-info/entry_points.txt
+Project_Package.egg-info/requires.txt
+Project_Package.egg-info/top_level.txt
